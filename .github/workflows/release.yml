@@ -52,8 +52,10 @@ jobs:
       - name: Publish to npm
         run: |
           echo "🚀 Publishing to npm..."
-          npm publish --provenance --access public
+          pnpm publish --provenance --access public
           echo "✅ Package published successfully!"
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Create GitHub Release
         uses: actions/create-release@v1
