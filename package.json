@@ -1,0 +1,44 @@
+{
+  "name": "react-hook-form-discriminated",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "author": "EvgeniyKumachev",
+  "scripts": {
+    "build": "bunchee"
+  },
+  "version": "1.0.0",
+  "devDependencies": {
+    "@types/react": "^19.2.2",
+    "bunchee": "^6.6.2",
+    "react": "^19.2.0",
+    "react-hook-form": "^7.66.0",
+    "type-fest": "^5.2.0",
+    "typescript": "^5.9.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "es-toolkit": "^1.41.0"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "import": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "require": {
+      "types": "./dist/index.d.cts",
+      "default": "./dist/index.cjs"
+    }
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17 || ^18 || ^19",
+    "react-hook-form": "^7.61.0"
+  }
+}
